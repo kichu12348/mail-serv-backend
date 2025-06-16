@@ -341,6 +341,12 @@ function getMimeType(filePath: string): string {
   return mimeTypes[extension] || "application/octet-stream";
 }
 
+app.get("/", (req:any, res:any) => {
+  res.json({
+    message: "im betmennnnnnnn hehehehhehehhhehehe",
+  });
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Email service running on port ${PORT}`);
